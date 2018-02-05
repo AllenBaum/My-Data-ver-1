@@ -1,0 +1,171 @@
+# edphys_data_build2.r
+# write.csv(edphys_data_test2,"edphys_data_test2.csv")
+library(xlsx)
+library(readr)
+# January consolidation
+ed_kendall_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-North_Florida.xlsx",sheetName="Osceola")
+ed_osceolaPeds_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-North_Florida.xlsx",sheetName="Osceola Peds")
+ed_summerfield_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_0117 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0117-North_Florida.xlsx",sheetName="West Marion")
+ed_data_jan_17 <- rbind(ed_kendall_0117,ed_JFK_0117,ed_JFKPBG_0117,ed_JFKBB_0117,ed_hunters_0117,ed_ocala_0117,ed_osceola_0117,ed_osceolaPeds_0117,ed_summerfield_0117,ed_wmarion_0117)
+write.xlsx2(ed_data_jan_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_jan_17.xlsx", sheetName="jan", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+# February consolidation
+ed_kendall_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-North_Florida.xlsx",sheetName="Osceola")
+ed_osceolaPeds_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-North_Florida.xlsx",sheetName="Osceola Peds")
+ed_summerfield_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_0217 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0217-North_Florida.xlsx",sheetName="West Marion")
+ed_data_feb_17 <- rbind(ed_kendall_0217,ed_JFK_0217,ed_JFKPBG_0217,ed_JFKBB_0217,ed_hunters_0217,ed_ocala_0217,ed_osceola_0217,ed_osceolaPeds_0217,ed_summerfield_0217,ed_wmarion_0217)
+write.xlsx2(ed_data_feb_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_feb_17.xlsx", sheetName="feb", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+# March consolidation
+ed_kendall_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-North_Florida.xlsx",sheetName="Osceola")
+ed_osceolaPeds_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-North_Florida.xlsx",sheetName="Osceola Peds")
+ed_summerfield_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_0317 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0317-North_Florida.xlsx",sheetName="West Marion")
+ed_data_mar_17 <- rbind(ed_kendall_0317,ed_JFK_0317,ed_JFKPBG_0317,ed_JFKBB_0317,ed_hunters_0317,ed_ocala_0317,ed_osceola_0317,ed_osceolaPeds_0317,ed_summerfield_0317,ed_wmarion_0317)
+write.xlsx2(ed_data_mar_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_mar_17.xlsx", sheetName="mar", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+# April consolidation
+ed_kendall_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-North_Florida.xlsx",sheetName="Osceola")
+ed_osceolaPeds_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-North_Florida.xlsx",sheetName="Osceola Peds")
+ed_summerfield_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_0417 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0417-North_Florida.xlsx",sheetName="West Marion")
+ed_data_apr_17 <- rbind(ed_kendall_0417,ed_JFK_0417,ed_JFKPBG_0417,ed_JFKBB_0417,ed_hunters_0417,ed_ocala_0417,ed_osceola_0417,ed_osceolaPeds_0417,ed_summerfield_0417,ed_wmarion_0417)
+write.xlsx2(ed_data_apr_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_apr_17.xlsx", sheetName="apr", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+# May consolidation
+ed_kendall_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-North_Florida.xlsx",sheetName="Osceola")
+ed_osceolaPeds_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-North_Florida.xlsx",sheetName="Osceola Peds")
+ed_summerfield_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_0517 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0517-North_Florida.xlsx",sheetName="West Marion")
+ed_data_may_17 <- rbind(ed_kendall_0517,ed_JFK_0517,ed_JFKPBG_0517,ed_JFKBB_0517,ed_hunters_0517,ed_ocala_0517,ed_osceola_0517,ed_osceolaPeds_0517,ed_summerfield_0517,ed_wmarion_0517)
+write.xlsx2(ed_data_may_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_may_17.xlsx", sheetName="may", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+# June consolidation
+ed_kendall_0617 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0617-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_0617 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0617-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_0617 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0617-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_0617 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0617-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_0617 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0617-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_0617 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0617-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_0617 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0617-North_Florida.xlsx",sheetName="Osceola")
+ed_summerfield_0617 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0617-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_0617 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0617-North_Florida.xlsx",sheetName="West Marion")
+ed_data_jun_17 <- rbind(ed_kendall_0617,ed_JFK_0617,ed_JFKPBG_0617,ed_JFKBB_0617,ed_hunters_0617,ed_ocala_0617,ed_osceola_0617,ed_summerfield_0617,ed_wmarion_0617)
+write.xlsx2(ed_data_jun_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_jun_17.xlsx", sheetName="jun", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+# July consolidation
+ed_kendall_0717 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0717-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_0717 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0717-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_0717 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0717-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_0717 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0717-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_0717 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0717-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_0717 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0717-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_0717 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0717-North_Florida.xlsx",sheetName="Osceola")
+ed_summerfield_0717 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0717-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_0717 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0717-North_Florida.xlsx",sheetName="West Marion")
+ed_data_jul_17 <- rbind(ed_kendall_0717,ed_JFK_0717,ed_JFKPBG_0717,ed_JFKBB_0717,ed_hunters_0717,ed_ocala_0717,ed_osceola_0717,ed_summerfield_0717,ed_wmarion_0717)
+write.xlsx2(ed_data_jul_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_jul_17.xlsx", sheetName="jul", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+# August consolidation
+ed_kendall_0817 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0817-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_0817 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0817-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_0817 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0817-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_0817 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0817-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_0817 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0817-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_0817 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0817-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_0817 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0817-North_Florida.xlsx",sheetName="Osceola")
+ed_summerfield_0817 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0817-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_0817 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0817-North_Florida.xlsx",sheetName="West Marion")
+ed_data_aug_17 <- rbind(ed_kendall_0817,ed_JFK_0817,ed_JFKPBG_0817,ed_JFKBB_0817,ed_hunters_0817,ed_ocala_0817,ed_osceola_0817,ed_summerfield_0817,ed_wmarion_0817)
+write.xlsx2(ed_data_aug_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_aug_17.xlsx", sheetName="aug", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+# September consolidation
+ed_kendall_0917 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0917-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_0917 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0917-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_0917 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0917-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_0917 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0917-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_0917 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0917-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_0917 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0917-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_0917 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0917-North_Florida.xlsx",sheetName="Osceola")
+ed_summerfield_0917 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0917-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_0917 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-0917-North_Florida.xlsx",sheetName="West Marion")
+ed_data_sep_17 <- rbind(ed_kendall_0917,ed_JFK_0917,ed_JFKPBG_0917,ed_JFKBB_0917,ed_hunters_0917,ed_ocala_0917,ed_osceola_0917,ed_summerfield_0917,ed_wmarion_0917)
+write.xlsx2(ed_data_sep_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_sep_17.xlsx", sheetName="sep", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+# October consolidation
+ed_kendall_1017 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-1017-East_Florida.xlsx",sheetName="Kendall")
+ed_JFK_1017 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-1017-East_Florida.xlsx",sheetName="JFK")
+ed_JFKPBG_1017 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-1017-East_Florida.xlsx",sheetName="PBG FSED")
+ed_JFKBB_1017 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-1017-East_Florida.xlsx",sheetName="BB FSED")
+
+ed_hunters_1017 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-1017-North_Florida.xlsx",sheetName="Hunters Creek")
+ed_ocala_1017 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-1017-North_Florida.xlsx",sheetName="Ocala")
+ed_osceola_1017 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-1017-North_Florida.xlsx",sheetName="Osceola")
+ed_summerfield_1017 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-1017-North_Florida.xlsx",sheetName="Summerfield FSED")
+ed_wmarion_1017 <- read.xlsx("q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/ED_Physician_Report-1017-North_Florida.xlsx",sheetName="West Marion")
+ed_data_oct_17 <- rbind(ed_kendall_1017,ed_JFK_1017,ed_JFKPBG_1017,ed_JFKBB_1017,ed_hunters_1017,ed_ocala_1017,ed_osceola_1017,ed_summerfield_1017,ed_wmarion_1017)
+write.xlsx2(ed_data_oct_17, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_oct_17.xlsx", sheetName="oct", col.names=TRUE, row.names=FALSE, append=FALSE)
+
+ed_data_2017 <- rbind(ed_data_jan_17,ed_data_feb_17,ed_data_mar_17,ed_data_apr_17,ed_data_may_17,ed_data_jun_17,ed_data_jul_17,ed_data_aug_17,ed_data_sep_17,ed_data_oct_17)
+
+# ed_data_2017$In_Bed_to_Provider_Greet_Avg_Wait <- as.numeric(ed_data_2017$In_Bed_to_Provider_Greet_Avg_Wait)
+# ed_data_2017$Arrival_to_Provider_Avg_Wait <- as.numeric(ed_data_2017$Arrival_to_Provider_Avg_Wait)
+# ed_data_2017$Dup_MSE_Pcnt <- as.numeric(ed_data_2017$Dup_MSE_Pcnt)
+# ed_data_2017$Depart_to_PDOC_sign_Avg_Wait <- as.numeric(ed_data_2017$Depart_to_PDOC_sign_Avg_Wait)
+# ed_data_2017$Arrival_to_First_Ord_Avg_Wait <- as.numeric(ed_data_2017$Arrival_to_First_Ord_Avg_Wait)
+# ed_data_2017$Arrival_to_PainMed_Avg_Wait <- as.numeric(ed_data_2017$Arrival_to_PainMed_Avg_Wait)
+# ed_data_2017$Greet_to_Disp_Avg_Wait <- as.numeric(ed_data_2017$Greet_to_Disp_Avg_Wait)
+# ed_data_2017$Disp_to_A.ord_a_Avg_Wait <- as.numeric(ed_data_2017$Disp_to_A.ord_a_Avg_Wait)
+# ed_data_2017$Greet_to_Disp_dep_Avg_Wait <- as.numeric(ed_data_2017$Greet_to_Disp_dep_Avg_Wait)
+# ed_data_2017$Admitted_Patients_Avg_LOS <- as.numeric(ed_data_2017$Admitted_Patients_Avg_LOS)
+# ed_data_2017$ED_Arrival_to_Departure_ALOS_Min.DP <- as.numeric(ed_data_2017$ED_Arrival_to_Departure_ALOS_Min.DP)
+# ed_data_2017$Low_Acuity_Patients_Avg_LOS <- as.numeric(ed_data_2017$Low_Acuity_Patients_Avg_LOS)
+# ed_data_2017$CT_Util_Admitted_Patients_Pcnt <- as.numeric(ed_data_2017$CT_Util_Admitted_Patients_Pcnt)
+# ed_data_2017$US_Util_Admitted_Patients_Pcnt <- as.numeric(ed_data_2017$US_Util_Admitted_Patients_Pcnt)
+# ed_data_2017$CT_Util_Departed_Patients_Pcnt <- as.numeric(ed_data_2017$CT_Util_Departed_Patients_Pcnt)
+# ed_data_2017$US_Util_Departed_Patients_Pcnt <- as.numeric(ed_data_2017$US_Util_Departed_Patients_Pcnt)
+# ed_data_2017$Patients_per_Hour <- as.numeric(ed_data_2017$Patients_per_Hour)
+# ed_data_2017$PMD_to_Admin_order_Avg_Wait <- as.numeric(ed_data_2017$PMD_to_Admin_order_Avg_Wait)
+
+write.xlsx2(ed_data_2017, "q:/Anesthesia/_DropOff/ED_Reports/Site_Data_Capture/R/Consolidated/ed_data_2017.xlsx", sheetName="ytd", col.names=TRUE, row.names=FALSE, append=FALSE)
