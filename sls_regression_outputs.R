@@ -1,13 +1,13 @@
 # source("sls_regression_outputs.r")
 
-data <- StudentSurvey
-x <- Lock5Data::StudentSurvey$Height   # ch01pr19$ACT_Score; ch01ta01$Labor_Hours;  used_cars$age
-y <- Lock5Data::StudentSurvey$Weight   # ch01pr19$GPA; ch01ta01$Lot_Size; used_cars$price
+data <- satisfaction
+x <- satisfaction$patients   # ch01pr19$ACT_Score; ch01ta01$Labor_Hours;  used_cars$age
+y <- satisfaction$satisfaction   # ch01pr19$GPA; ch01ta01$Lot_Size; used_cars$price
 n <- nrow(data)
 df <- n-2
-ci <- "CI% used: 98%"
+ci <- "CI% used: 95%"
 alpha <- .975   #Assign alpha-level: 90% CI=.950; 95% CI=.975; 98% CI=.990; 99% CI=.995
-x_val <- 60
+x_val <- 50
 
 # Regression parameters and outputs
 regression <- lm(y~x, na.action = na.omit)         # regression function
